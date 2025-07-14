@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biomadeiras Lda</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="header-container">
+    <div class="header fade-in">
+      <div class="logo">Biomadeiras Lda</div>
+
+      <div class="nav-bar">
+        <ul>
+          <li><a href="#" data-i18n="home">HOME</a></li>
+          <li><a href="#empresa" data-i18n="empresa">A EMPRESA</a></li>
+          <li><a href="#produtos" data-i18n="produtos">O QUE PRODUZIMOS</a></li>
+          <li><a href="#contactos" data-i18n="contactos">CONTACTOS</a></li>
+        </ul>
+      </div>
+
+      <div class="menu-toggle" onclick="document.querySelector('.nav-bar').classList.toggle('active')">
+        ☰
+      </div>
+
+      <div class="language-switcher">
+        <img src="https://flagcdn.com/pt.svg" alt="Português">
+        <img src="https://flagcdn.com/gb.svg" alt="Inglês">
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero-banner">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('https://cdn.pixabay.com/photo/2016/11/29/07/29/wood-1868104_1280.jpg')">
+          <div class="slide-content fade-in">
+            <h2 data-i18n="slogan1">Madeira ecológica com qualidade garantida</h2>
+            <p data-i18n="sub1">Referência em construção, aquecimento e serviços florestais.</p>
+          </div>
+        </div>
+        <div class="swiper-slide" style="background-image:url('https://cdn.pixabay.com/photo/2021/09/03/16/18/forestry-6596153_1280.jpg')">
+          <div class="slide-content fade-in">
+            <h2 data-i18n="slogan2">Tratamento de terrenos e limpeza florestal</h2>
+            <p data-i18n="sub2">Profissionalismo, experiência e respeito pelo ambiente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sobre nós -->
+  <div class="sobre-nos fade-in" id="empresa">
+    <div class="conteudo-sobre">
+      <h2 data-i18n="sobre">Sobre nós</h2>
+      <p data-i18n="sobreTexto">A Biomadeiras Lda é uma empresa dedicada à prestação de serviços florestais, venda de madeira, lenha e outros derivados.
+      Trabalhamos com responsabilidade ambiental e experiência no setor.</p>
+    </div>
+  </div>
+
+  <!-- Produtos -->
+  <section id="produtos" class="secao-produtos fade-in">
+    <div class="conteudo">
+      <h2 data-i18n="produtos">O Que Produzimos</h2>
+      <div class="produtos-grid">
+        <div class="card-produto fade-in">
+          <img src="https://cdn.pixabay.com/photo/2016/11/21/15/47/wood-1846059_1280.jpg" alt="Lenha">
+          <h3 data-i18n="lenha">Lenha seca de qualidade</h3>
+        </div>
+        <div class="card-produto fade-in">
+          <img src="https://cdn.pixabay.com/photo/2017/08/07/01/46/wood-2598550_1280.jpg" alt="Madeira construção">
+          <h3 data-i18n="madeira">Madeira para construção</h3>
+        </div>
+        <div class="card-produto fade-in">
+          <img src="https://cdn.pixabay.com/photo/2021/09/03/16/18/forestry-6596153_1280.jpg" alt="Serviços florestais">
+          <h3 data-i18n="servicos">Serviços florestais</h3>
+        </div>
+        <div class="card-produto fade-in">
+          <img src="https://media.licdn.com/dms/image/v2/C561BAQFaIv56yg0FXw/company-background_10000/company-background_10000/0/1645008301517/centro_da_biomassa_cover?e=2147483647&v=beta&t=4957RWMDzctPpn4ZQ12EuLvNxRvCDe5FmjHe43BY8MQ" alt="Biomassa">
+          <h3 data-i18n="biomassa">Biomassa</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contactos -->
+  <section id="contactos" class="secao-contactos fade-in">
+    <div class="contacto-flex">
+      <div class="info-e-form">
+        <div class="info-contacto">
+          <h2 data-i18n="contacte">Contacte-nos</h2>
+          <p data-i18n="mensagem">Estamos disponíveis para esclarecer dúvidas ou enviar orçamentos personalizados.</p>
+          <ul>
+            <li><strong data-i18n="morada">📍 Morada:</strong> Lugar da Barroca, 4540-47 Arouca</li>
+            <li><strong data-i18n="telefone">📞 Telefone:</strong> +351 919199113</li>
+            <li><strong>✉️ Email:</strong> danielfilipeotsoares@gmail.com</li>
+          </ul>
+        </div>
+        <div class="formulario-contacto">
+          <form action="https://formspree.io/f/xnnvldkv" method="post">
+            <input type="text" name="nome" placeholder="O seu nome" required>
+            <input type="email" name="email" placeholder="O seu email" required>
+            <textarea name="mensagem" rows="5" placeholder="A sua mensagem" required></textarea>
+            <button type="submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+      <div class="mapa-estaleiro">
+        <h3 data-i18n="estaleiro">Localização do Estaleiro</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12193.357211896052!2d-8.3729251771831!3d40.92668119863782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd247e109ae3f681%3A0x244a2c7404f94354!2sV%C3%A1rzea%2C%204505-576%20Pigeiros!5e0!3m2!1spt-PT!2spt!4v1720961234567!5m2!1spt-PT!2spt"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="footer-conteudo">
+      <div class="footer-coluna">
+        <h3>Biomadeiras Lda</h3>
+        <p>Lugar da Barroca <br>4540-47 Arouca</p>
+      </div>
+      <div class="footer-coluna">
+        <h3 data-i18n="contacte">Contactos</h3>
+        <p>Email: <a href="mailto:danielfilipeotsoares@gmail.com">danielfilipeotsoares@gmail.com</a><br>
+        Telemóvel: <a href="tel:+351919199113">919199113</a></p>
+      </div>
+      <div class="footer-coluna">
+        <h3 data-i18n="estaleiroF">Estaleiro</h3>
+        <p>Quinta da Lage - Várzea - 4505-576 <br>Pigeiros VFR</p>
+      </div>
+    </div>
+    <div class="footer-baixo">
+      <p>© 2025 Biomadeiras Lda. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
